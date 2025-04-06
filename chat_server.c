@@ -38,7 +38,7 @@ int main(){
 	server_address.sin_addr.s_addr = INADDR_ANY; // Listen for connection on all available network interfaces
 	server_address.sin_port = htons(PORTNUMBER); // Convert the port number to network byte order
 
-	// Bind the server to the address
+	// Bind the server to the address.. Bind takes pointer address...
 	if(bind(server_fd, (struct sockaddr *)&server_address, sizeof(server_address)) < 0){
 		perror("Failed to bind server socket to configured address!\n");
 		exit(EXIT_FAILURE);
@@ -53,7 +53,9 @@ int main(){
 	}
 
 	printf("Server listening on port: %d\n", PORTNUMBER);
-		
+
+	// Server runnning now accept connections
+	
 
 	
 	
