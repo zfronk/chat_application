@@ -143,4 +143,4 @@ Feel free to contribute to this basic chat server by adding the missing function
 
 ## License
 
-[Your License Here (e.g., MIT License)]
+[MIT License)]
