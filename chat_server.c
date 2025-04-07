@@ -9,7 +9,7 @@
 #include <arpa/inet.h>
 
 // Preprocessor macro components
-#define PORTNUMBER 12345
+#define PORTNUMBER 1200
 #define BUFFER_SIZE 256 
 
 // Main executable
@@ -53,6 +53,8 @@ int main(){
 	}
 
 	printf("Server listening on port: %d\n", PORTNUMBER);
+
+	printf("Waiting for client to connect...\n");
 
 	// Server runnning now accept connections
 	
